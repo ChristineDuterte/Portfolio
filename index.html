@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Christine Duterte</title>
+    <link rel="icon" href="assets/mypic.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="name">Christine Duterte</div>
+
+        <!-- Burger icon (only shown on mobile) -->
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="about" class="about-section">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="about-content">
+            <img src="assets/me1.png" alt="Christine Duterte's Profile Picture" class="about-image animate-zoom">
+            <div class="about-text">
+                <h1>Hi, I'm <span class="name1 animate-zoom">Christine Duterte</span></h1>
+                <p>
+                    A results-driven and analytical individual with a solid foundation in programming, user interface
+                    design, and data analytics. Quick to learn and eager to apply technical and problem-solving skills
+                    in real-world projects. Eager to contribute to innovative tech projects and grow professionally in a
+                    dynamic organization.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills-section">
+        <h2>SKILLS</h2>
+        <div class="skills-container">
+            <div class="skill-box animate-zoom">
+                <img src="assets/python-logo.png" alt="Python Logo">
+                <h3>Python</h3>
+            </div>
+            <div class="skill-box animate-zoom">
+                <img src="assets/java-logo.png" alt="Java Logo">
+                <h3>Java</h3>
+            </div>
+            <div class="skill-box animate-zoom">
+                <img src="assets/javascript-logo.png" alt="JavaScript Logo">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-box animate-zoom">
+                <img src="assets/html-logo.png" alt="HTML Logo">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-box animate-zoom">
+                <img src="assets/sql-logo.png" alt="SQL Logo">
+                <h3>SQL</h3>
+            </div>
+            <div class="skill-box animate-zoom">
+                <img src="assets/css-logo.png" alt="CSS Logo">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-box animate-zoom">
+                <img src="assets/figma-logo.png" alt="Figma Logo">
+                <h3>Figma</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects" class="project-section">
+        <h2>PROJECTS</h2>
+
+        <div class="project-container animate-zoom">
+            <img src="assets/insularlogo.png" alt="Project Screenshot" class="project-image">
+            <div class="project-details">
+                <h3 class="project-title ">Insurance Website</h3>
+                <p class="project-description">
+                    An insurance website where clients can explore services, book appointments, apply for jobs, and send
+                    messages. Built using HTML, CSS, JavaScript, and Firebase to provide a smooth and interactive user
+                    experience.
+                </p>
+                <a href="https://eaglify.github.io/Eaglify/?fbclid=IwY2xjawKiFJRleHRuA2FlbQIxMABicmlkETFxdGJ1UGJQVjNRT1ZmY0ZjAR5gVx9CuSajtepY3FxsECPZcCkN4Au8ajIUobiILEnskyHKgCmiOhSwxY6EXQ_aem_RSddytk0JQRDUFfgzKaeKg"
+                    target="_blank" class="project-button">View Project</a>
+            </div>
+        </div>
+        <div class="project-container animate-zoom">
+            <img src="assets/smelogo.png" alt="Project Screenshot" class="project-image">
+            <div class="project-details">
+                <h3 class="project-title">Business Recommender Website</h3>
+                <p class="project-description">
+                    A business recommender website that suggests ideal businesses or locations based on user
+                    preferences. Built with HTML, CSS, JavaScript, Node.js, and SQL, featuring data analytics,
+                    interactive maps, and insights on SMEs in Cabuyao, Laguna.
+                </p>
+                <a href="smeasy.html" target="_blank" class="project-button">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <p class="contact-message">Feel free to reach out!</p>
+
+        <div class="contact-info">
+            <span><i class="fas fa-phone"></i>09289848065</span>
+            <span><i class="fas fa-envelope"></i> dutertechristine95@gmail.com</span>
+        </div>
+
+        <hr>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/christine.duterte.358966/" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/_.chrstin?igsh=aG9rMzh1eHY4Zm5t" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/christine-duterte-63909236a/" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <p class="footer-copy">© 2025 Christine Duterte</p>
+    </section>
+
+    <script src="https://kit.fontawesome.com/494d741353.js" crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("nav-links").classList.toggle("show");
+        });
+    </script>
+
+    <script>
+        function zoomOnScroll() {
+            const elements = document.querySelectorAll('.animate-zoom');
+
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                } else {
+                    el.classList.remove('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', zoomOnScroll);
+        window.addEventListener('load', zoomOnScroll);
+    </script>
+
+
+
+</body>
+
+</html>

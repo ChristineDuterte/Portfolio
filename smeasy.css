@@ -1,0 +1,210 @@
+/* Body and Layout */
+body {
+    background-color: #121212;
+    color: #e0e0e0d6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.logo-image {
+    width: 600px;
+    height: auto;
+    margin: 20px;
+}
+
+/* Centered Titles and Paragraphs */
+h1, h2, h3, p {
+    text-align: center;
+    max-width: 900px;
+}
+
+h1{
+    color: #06af5b; /* Green for main titles */
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+p{
+    text-align: justify;
+    text-align: left;
+}
+
+h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #bf7c17;
+}
+.screenshots h2{
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.team p{
+    text-align: center;
+}
+.team h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Section Cards */
+.section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(1, 209, 105, 0.382);
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section p{
+    text-align: justify;
+  
+}
+
+/* Images Layout */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.images img {
+    max-width: 800px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.images img:last-child {
+    margin-bottom: 30px; /* or whatever space you want */
+}
+
+/* Tool Tag Styles */
+.tool-html, .tool-css, .tool-js, .tool-pg, .tool-node {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 3px;
+    border-radius: 12px;
+    color: #f0f0f0de;
+    background-color: rgba(228, 77, 38, 0.25);    /* HTML: desaturated red-orange */
+}
+
+/* Individual Background Colors (desaturated) */
+.tool-css {
+    background-color: rgba(38, 77, 228, 0.25);     /* CSS: soft blue */
+}
+
+.tool-js {
+    background-color: rgba(240, 219, 79, 0.25);    /* JS: muted yellow */
+}
+
+.tool-pg {
+    background-color: rgba(51, 103, 145, 0.25);    /* PostgreSQL: soft navy */
+}
+
+.tool-node {
+    background-color: rgba(140, 200, 75, 0.25);    /* Node.js: light green */
+}
+
+/* Iframe Styling */
+iframe {
+    width: 800px;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  /* Make iframe take full width with appropriate height */
+  iframe {
+    max-width: 100%;
+    height: 200px; /* Adjust height for mobile */
+  }
+
+  /* Logo smaller on mobile */
+  .logo-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  /* Reduce padding and margins in sections */
+  .section {
+    padding: 15px;
+    margin: 15px 10px;
+    width: 95%;
+  }
+
+  /* Smaller headings on mobile */
+  h1 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .screenshots h2 {
+    font-size: 28px;
+  }
+
+  /* Adjust images in .images container */
+  .images img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Moderate iframe size for tablets */
+  iframe {
+    max-width: 100%;
+    height: 450px;
+  }
+
+  /* Logo resizing for tablets */
+  .logo-image {
+    width: 100%;
+    max-width: 450px;
+    margin: 15px auto;
+  }
+
+  /* Section padding and width for tablets */
+  .section {
+    padding: 18px;
+    margin: 18px 15px;
+    width: 90%;
+  }
+
+  /* Headings size for tablets */
+  h1 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .screenshots h2 {
+    font-size: 34px;
+  }
+
+  /* Images responsive within container */
+  .images img {
+    max-width: 100%;
+  }
+}
