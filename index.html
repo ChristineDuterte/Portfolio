@@ -136,28 +136,35 @@
 
     <script src="https://kit.fontawesome.com/494d741353.js" crossorigin="anonymous"></script>
 
-    <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const navLinks = document.getElementById("nav-links");
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
 
-        // Toggle menu on click
-        menuToggle.addEventListener("click", function (e) {
-            e.stopPropagation(); // Prevent this click from triggering document listener
-            navLinks.classList.toggle("show");
+    // Toggle menu on click
+    menuToggle.addEventListener("click", function (e) {
+        e.stopPropagation(); // Prevent this click from triggering document listener
+        navLinks.classList.toggle("show");
+    });
+
+    // Hide menu when clicking outside
+    document.addEventListener("click", function (e) {
+        if (
+            navLinks.classList.contains("show") &&
+            !navLinks.contains(e.target) &&
+            !menuToggle.contains(e.target)
+        ) {
+            navLinks.classList.remove("show");
+        }
+    });
+
+    // Hide menu when clicking any nav link inside
+    const links = navLinks.querySelectorAll("a");
+    links.forEach(function(link) {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("show");
         });
-
-        // Hide menu when clicking outside
-        document.addEventListener("click", function (e) {
-            if (
-                navLinks.classList.contains("show") &&
-                !navLinks.contains(e.target) &&
-                !menuToggle.contains(e.target)
-            ) {
-                navLinks.classList.remove("show");
-            }
-        });
-    </script>
-
+    });
+</script>
 
     <script>
         function zoomOnScroll() {
