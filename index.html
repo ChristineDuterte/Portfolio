@@ -84,7 +84,18 @@
 
     <section id="projects" class="project-section">
         <h2>PROJECTS</h2>
-
+        <div class="project-container animate-zoom">
+            <img src="assets/bloglogo.png" alt="Blog Website Screenshot" class="project-image">
+            <div class="project-details">
+                <h3 class="project-title">Blog Website</h3>
+                <p class="project-description">
+                    A responsive blogging platform where users can register, log in, write, edit, and delete blog posts,
+                    and browse by category. Built using React for the frontend with JSX and CSS for layout and styling,
+                    and Firebase for authentication, Firestore database, and image storage.
+                </p>
+                <a href="https://miniblogspot.netlify.app/" target="_blank" class="project-button">View Project</a>
+            </div>
+        </div>
         <div class="project-container animate-zoom">
             <img src="assets/insularlogo.png" alt="Project Screenshot" class="project-image">
             <div class="project-details">
@@ -136,35 +147,37 @@
 
     <script src="https://kit.fontawesome.com/494d741353.js" crossorigin="anonymous"></script>
 
-<script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
 
-    // Toggle menu on click
-    menuToggle.addEventListener("click", function (e) {
-        e.stopPropagation(); // Prevent this click from triggering document listener
-        navLinks.classList.toggle("show");
-    });
-
-    // Hide menu when clicking outside
-    document.addEventListener("click", function (e) {
-        if (
-            navLinks.classList.contains("show") &&
-            !navLinks.contains(e.target) &&
-            !menuToggle.contains(e.target)
-        ) {
-            navLinks.classList.remove("show");
-        }
-    });
-
-    // Hide menu when clicking any nav link inside
-    const links = navLinks.querySelectorAll("a");
-    links.forEach(function(link) {
-        link.addEventListener("click", function () {
-            navLinks.classList.remove("show");
+        // Toggle menu on click
+        menuToggle.addEventListener("click", function (e) {
+            e.stopPropagation(); // Prevent this click from triggering document listener
+            navLinks.classList.toggle("show");
         });
-    });
-</script>
+
+        // Hide menu when clicking outside
+        document.addEventListener("click", function (e) {
+            if (
+                navLinks.classList.contains("show") &&
+                !navLinks.contains(e.target) &&
+                !menuToggle.contains(e.target)
+            ) {
+                navLinks.classList.remove("show");
+            }
+        });
+
+        // Hide menu when clicking any nav link inside
+        const links = navLinks.querySelectorAll("a");
+        links.forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("show");
+            });
+        });
+    </script>
+
+
 
     <script>
         function zoomOnScroll() {
@@ -183,6 +196,8 @@
         window.addEventListener('scroll', zoomOnScroll);
         window.addEventListener('load', zoomOnScroll);
     </script>
+
+
 
 
 
